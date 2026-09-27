@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0-rc.2",
+    "description": "Back up DVDs into a Plex-compatible library",
+    "homepage": "https://github.com/rodent-software/packrat",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rodent-software/packrat/releases/download/v0.1.0-rc.2/packrat-x86_64-pc-windows-msvc.zip",
+            "hash": "a0c8c820788727109c51a8e4f63f27b8bbc3e9c703b0b697a53dc3ee4a67f28a"
+        }
+    },
+    "bin": "packrat.exe",
+    "checkver": {
+        "github": "https://github.com/rodent-software/packrat"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rodent-software/packrat/releases/download/v$version/packrat-x86_64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/rodent-software/packrat/releases/download/v$version/packrat-x86_64-pc-windows-msvc.zip.sha256",
+            "regex": "([a-fA-F0-9]{64})"
+        }
+    }
+}
