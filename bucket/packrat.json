@@ -1,6 +1,6 @@
 {
     "version": "0.1.0-rc.2",
-    "description": "Back up DVDs into a Plex-compatible library",
+    "description": "A free and open source physical media backup utility",
     "homepage": "https://github.com/rodent-software/packrat",
     "license": "GPL-3.0-or-later",
     "architecture": {
